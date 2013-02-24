@@ -1,0 +1,116 @@
+<header class="navbar  navbar-fixed-top navbar-inverse ">
+	<div class="navbar-inner">
+		<div class="container">
+			<h4 id="logo">Samuel santhosh</h4>
+			<nav>
+				<ul class="nav pull-right">
+					<li><%= link_to "Home", root_path %></li>
+					<li><%= link_to "Galary", galary_path %></li>
+					<li><%= link_to "Contact Me", contact_path %></li>
+					
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+</header>	
+
+<div class="row1">
+	<aside class="span2">
+
+		<table class="table table-hover hero-unit" >
+			
+			<tr><td>
+				<a href="#myModal1" role="button" class="btn btn-block btn-info" data-toggle="modal">About Me</a>
+			</td></tr>
+			<tr><td>
+				<a href="#myModal" role="button" class="btn btn-block btn-info" data-toggle="modal">Contact</a>
+				<!-- Button to trigger modal -->
+
+				<!-- Modal -->
+				<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h3 id="myModalLabel" align="center">Contact me</h3>
+					</div>
+					<div class="modal-body hero-unit">
+						<h4> Mobile Number:</h4>
+
+						+91-9629171382 <br>
+
+						<h4> Email:</h4>
+						samuels410@gmail.com <br>
+						samuel@arrivusystems.com <br>
+
+						<h4> Facebook</h4>
+
+						http://facebook.com/samuels410
+
+						<h4> Address For Communication:</h4>
+						Y.samuel santhosh ,<br>
+						Zionpuram, <br>
+						M.K.Pottal Post, <br>
+						Kanyakumari District, <br>
+						629501. <br>
+
+					</div>
+				</div>
+			</td></tr>
+			<tr><td>
+
+				<a href="#myModal3" role="button" class="btn btn-block btn-info" data-toggle="modal">Galary</a>
+				<!-- Button to trigger modal -->
+
+				<!-- Modal -->
+				<div id="myModal3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h3 id="myModalLabel" align="center">Photo Gallary </h3>
+					</div>
+					<div class="modal-body" align="center">
+
+						<ul class="thumbnails" align="center">
+							<li class="span6">
+								<div class="thumbnail" align="center">
+									<%= link_to image_tag("6.jpg")%>
+									<h5>Freinds</h5>
+								</div>
+							</li>
+							<li class="span6">
+								<div class="thumbnail" align="center">
+									<%= link_to image_tag("g2.jpg")%>
+									<h5>Freinds</h5>
+								</div>
+							</li>
+							<li class="span6">
+								<div class="thumbnail" align="center">
+									<%= link_to image_tag("g3.jpg")%>
+									<h5>Freinds</h5>
+								</div>
+							</li>
+							<li class="span6">
+								<div class="thumbnail" align="center">
+									<%= link_to image_tag("g4.jpg")%>
+									<h5>Freinds</h5>
+								</div>
+							</li>
+						</ul>
+
+
+					</div>
+					<div class="modal-footer">
+						<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+
+					</div>
+
+				</div>
+
+			</td></tr>
+
+
+		</table>
+	</aside>
+</div>
+

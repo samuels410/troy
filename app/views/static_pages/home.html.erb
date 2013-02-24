@@ -1,0 +1,41 @@
+<div align="center">
+
+	<div class="alert alert-success">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<strong>Welcome! </strong> Friend Have a nice day...
+	</div>
+</div><br>
+<div id="myCarousel" class="carousel slide" >
+	
+	<!-- Carousel items -->
+	<div class="carousel-inner" >
+		<div class="active item"  >
+			<%=image_tag("1.jpg", alt: "sam",class: "img1")%>
+		</div>
+	
+		<div class="item">
+			<%=image_tag("5.jpg", alt: "sam",class: "img1")%>
+		</div>
+		<div class="item">
+			<%=image_tag("6.jpg", alt: "sam",class: "img1")%>
+		</div>
+	</div>
+
+	<!-- Carousel nav -->
+	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+</div>
+
+
+<script type="text/javascript">
+$('.carousel').carousel({
+	interval: 2000
+
+})
+
+setTimeout(function () {
+	$('.alert').alert('close')
+}, 5000)
+
+</script>
